@@ -10,7 +10,7 @@ function getNewState(state, newState) {
 }
 
 export default function (state = fromJS({}), action) {
-    
+
     switch (action.type) {
         case 'TEXT_CHANGED':
             return getNewState(state, { randomString: action.randomString });
